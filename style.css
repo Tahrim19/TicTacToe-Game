@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at 0.1% 53.8%, rgb(255, 182, 172) 0%, rgb(255, 123, 172) 100.2%);
+}
+
+.wrapper{
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.container{
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+
+.button-option{
+    background: rgba(255, 192, 203, 0.603);
+    height: 22vmin;
+    width: 22vmin;
+    border: none;
+    border-radius: 8px;
+    font-size: 80px;
+    font-weight: 700;
+    color: #e93c76;
+    box-shadow: 0 0 15px rgba(0, 0, 0 ,0.5);
+}
+
+#restart-button{
+    position: relative;
+    margin: 20px auto 0 auto;
+    display: block;
+    font-size: 20px;;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #c54c82;
+    color: white;
+    border: none;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
+}
+
+#restart-button:hover{
+    background-color: #8d1f56cc;
+}
+
+.popup{
+    background: radial-gradient(circle at 0.1% 53.8%, rgb(255, 182, 172) 0%, rgb(255, 123, 172) 100.2%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 80px;
+    font-weight: 600;
+    display: none;
+}
+
+#new-game{
+    font-size: 40px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #c54c82;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+#new-game:hover{
+    background-color: #8d1f56cc;
+}
+
+#message{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    letter-spacing: 7px;
+}
+
+.turn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 3px;
+    font-family: monospace;
+}
+
+/* background: linear-gradient(to right, #8052ec , #d164ff); */
